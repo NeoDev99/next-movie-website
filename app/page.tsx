@@ -23,8 +23,8 @@ export default async function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <section className="py-12 sm:py-16 lg:py-24">
-          <div className="mt-5 flex flex-col">
+        <section>
+          <div className="flex flex-col">
             <div className="w-[1300px] max-w-full px-4 mx-auto">
               <UpcomingMovies upcomingMovies={upcomingMovies} />
               <PopularMovies popularMovies={popularMovies} />
