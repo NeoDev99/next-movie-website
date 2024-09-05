@@ -21,7 +21,11 @@ const CastCard = ({ cast }: { cast: ICastCard }) => {
               : `${EMPTY_MOVIE_URL}`
           }
           alt={cast?.name}
-          fill={true}
+          
+          width={300}
+          height={450}
+          className="h-auto max-w-full transition-transform duration-300 group-hover:scale-105"
+          style={{ aspectRatio: "300/450", objectFit: "cover" }}
         />
       </div>
       <div className="flex flex-col gap-1 mt-3">
