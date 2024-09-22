@@ -6,7 +6,7 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mania",
+  title: "vi0",
   description: "Movie Website created with NextJS",
 };
 

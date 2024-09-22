@@ -5,6 +5,7 @@ import dayjs from "dayjs";
 import CastCard, { ICastCard } from "@/app/_components/ui/CastCard";
 import MovieCard, { IMovieCard } from "@/app/_components/ui/MovieCard";
 import { EMPTY_MOVIE_URL, IMAGE_URL } from "@/config/imageConfig";
+import { Button } from "@/components/ui/Button";
 
 interface IParamsMovieDetails {
   params: {
@@ -127,6 +128,14 @@ const page = async ({ params }: IParamsMovieDetails) => {
 
             <div className="flex flex-col mt-5">
               <p className="text-sm sm:text-md">{movie?.overview}</p>
+            </div>
+
+            <div className="pt-8">
+              <Link href={`/player/${id}`} prefetch={false}>
+                <Button>
+                  Watch trailer
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

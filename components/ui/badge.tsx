@@ -8,10 +8,10 @@ interface BadgeProps {
 
 const Badge: React.FC<BadgeProps> = ({ children, variant = 'default' }) => {
     const classes = clsx(
-        'inline-flex items-center px-3 py-1 text-sm font-medium rounded-full',
+        'inline-flex items-center px-3 py-1 text-sm sm:text-xs font-medium rounded-full',
         {
             'bg-red-500 text-white': variant === 'default',
-            'border border-gray-300 text-gray-700': variant === 'outline',
+            'border border-gray-300 text-white/70': variant === 'outline',
         }
     );
 
